@@ -68,7 +68,7 @@ export const start = async() => {
             getuserbyid(_id: String, token: String): User
             getstorybyslug(slug: String, token: String): Story
             getrandomstory(token: String): [Story]
-            getrandomstories(token: String): [Story]
+            getrandomstories: [Story]
             loginUser(username: String, hashPassword:String): User
         }
         type Mutation{
@@ -134,14 +134,10 @@ export const start = async() => {
                         return "{message: 'sorry Auth error!'}"
                     }   
                 },
-                getrandomstories: async (root, {token}) => {
-                    let tok = jwt.verify(token,secret);
-                    if(tok !== undefined){
+                getrandomstories: async () => {
+                    
                         return (await story_db.find({}).toArray()).map(prepare)
-                    }
-                    else{
-                        return "{message: 'sorry Auth error!'}"
-                    }
+                    
                     
                 },
                 loginUser: async (root, args) => {
