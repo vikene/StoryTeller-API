@@ -291,7 +291,7 @@ export const start = async() => {
             endpointURL: "/graphql"
         }))
 
-        app.listen(80, function(err){
+        app.listen(3000, function(err){
             if(err){
                 console.log("ERROR")
             }
