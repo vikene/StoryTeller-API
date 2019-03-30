@@ -1,0 +1,43 @@
+{
+  "name": "storyteller-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikene/StoryTeller-API.git"
+  },
+  "keywords": [
+    "google",
+    "nsbe",
+    "hackathon",
+    "detroit"
+  ],
+  "author": "Vigneash Sundararajan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vikene/StoryTeller-API/issues"
+  },
+  "homepage": "https://github.com/vikene/StoryTeller-API#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "graphql-server-express": "^1.4.0",
+    "graphql-tools": "^4.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^2.2.33",
+    "mongoose": "^5.4.20"
+  }
+}
