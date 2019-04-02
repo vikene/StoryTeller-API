@@ -10,7 +10,7 @@ const jwt = require('jsonwebtoken')
 
 export const start = async() => {
     try{ 
-        const MongoDBURL = "mongodb://vikene:yoyojava@cluster0-shard-00-00-tdw7p.mongodb.net:27017,cluster0-shard-00-01-tdw7p.mongodb.net:27017,cluster0-shard-00-02-tdw7p.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true";
+        const MongoDBURL = "";
         var db;
         try{
              db = await MongoClient.connect(MongoDBURL);
